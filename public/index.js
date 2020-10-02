@@ -9,7 +9,7 @@ var myPeer = new Peer(undefined, {
   path:'/peerjs',
     host: '/',
     port: 443,
-    secure:false
+    secure:true
 });
 
 var myVideo = document.createElement('video');
