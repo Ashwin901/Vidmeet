@@ -1,7 +1,8 @@
-var socket = io('/');
-var videoDisplay = document.querySelector('.video-display');
-var chatButton = document.querySelector(".chat-button");
-var chatSection = document.querySelector(".chat-section");
+const socket = io('/');
+const videoDisplay = document.querySelector('.video-display');
+const chatButton = document.querySelector(".chat-button");
+const chatSection = document.querySelector(".chat-section");
+const chatControlButton = document.querySelector(".chat-controls");
 
 // Using peer library we can generate unique id's for each user using which we can connect multiple users
 //So whenever a user visits our root that is '/' the peer server which is on port 3001 listens to it and generates a ID 
@@ -170,3 +171,5 @@ const scrollToBottom = () => {
            chatSection.classList.add('removeChat');
           }
   }
+
+  chatControlButton.addEventListener('click',chatDisplay);
