@@ -8,7 +8,7 @@ var chatSection = document.querySelector(".chat-section");
 var myPeer = new Peer(undefined, {
   path:'/myapp',
     host: '/',
-    port: 9000,
+    port: process.env.PORT,
     secure:true
 });
 
