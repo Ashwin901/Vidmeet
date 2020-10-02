@@ -6,9 +6,8 @@ var chatSection = document.querySelector(".chat-section");
 // Using peer library we can generate unique id's for each user using which we can connect multiple users
 //So whenever a user visits our root that is '/' the peer server which is on port 3001 listens to it and generates a ID 
 var myPeer = new Peer(undefined, {
-  path:'/myapp',
-    host: '/',
-    port: process.env.PORT,
+    host: 'fierce-inlet-18150.herokuapp.com',
+    port: 443,
     secure:true
 });
 
