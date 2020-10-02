@@ -28,7 +28,6 @@ p{
 .left{
     display: flex;
     flex-grow: 1;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -46,15 +45,11 @@ p{
 }
 
 .chat-section{
-    
     flex: 0.2;
     display: flex;
     flex-direction: column;
 }
 
-.remove-chat{
-    /* transform: translateY(100%); */
-}
 
 .chat-heading{
    padding-top: 12px;
@@ -159,3 +154,6 @@ form > button {
     outline: none;
 }
 
+.removeChat {
+    display: none;
+}

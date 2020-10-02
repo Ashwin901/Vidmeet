@@ -8,6 +8,7 @@ var chatSection = document.querySelector(".chat-section");
 var myPeer = new Peer(undefined, {
   path:'/peerjs',
     host: 'fierce-inlet-18150.herokuapp.com',
+    host:'/',
     port: 443,
     secure:true
 });
@@ -15,6 +16,7 @@ var myPeer = new Peer(undefined, {
 var myVideo = document.createElement('video');
 myVideo.muted = true;
 var peers ={};
+
 
 var myVideoStream;
 navigator.mediaDevices.getUserMedia({
@@ -27,7 +29,6 @@ navigator.mediaDevices.getUserMedia({
        console.log("video");
         //Here if there is already a user , then when the second user joins he will send his stream to the first one
         call.answer(stream);
-
         //Here the first person is sending his stream back to the second person so that his video is shown on the second peer's browser
         const video = document.createElement('video');
         call.on('stream', userVideoStream => {
@@ -36,7 +37,6 @@ navigator.mediaDevices.getUserMedia({
     })
 
     socket.on('user-connected', (userID) => {
-        console.log(userID);
         connectToOtherUsers(userID, stream);
     })
 
@@ -61,8 +61,6 @@ socket.on("createMessage", (message,userid) => {
   })
 
 socket.on('user-disconnected', (userID) => {
-    // Here we remove the user from the call whe he disconnects
-    console.log(userID);
   if(peers[userID]){
       peers[userID].close();
   }
@@ -70,7 +68,6 @@ socket.on('user-disconnected', (userID) => {
 
 //Whenever the user enters the website this event is triggered
 myPeer.on('open', (id) => {
-
     // This triggers the join-room event we have set up in the server
     socket.emit('join-room', room_ID, id);
 });
@@ -164,12 +161,12 @@ const scrollToBottom = () => {
     document.querySelector('.video_button').innerHTML = html;
   }
   
-  chatButton.addEventListener("click", chatDisplay );
+  chatButton.addEventListener('click',chatDisplay);
 
   function chatDisplay(){
-      if(chatSection.classList.contains('remove-chat')){
-          chatSection.classList.remove('remove-chat');
-      }else{
-          chatSection.classList.add("remove-chat");
-      }
+          if(chatSection.classList.contains('removeChat')){
+            chatSection.classList.remove('removeChat');
+          }else{
+           chatSection.classList.add('removeChat');
+          }
   }

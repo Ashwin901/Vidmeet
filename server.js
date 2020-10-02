@@ -56,6 +56,7 @@ io.on('connection', function(socket){
 
         //  When the user leaves the room this event is triggered
         socket.on('disconnect',() => {
+          console.log("disconnect");
           socket.to(roomID).emit('user-disconnected', userID);
      });
 
