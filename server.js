@@ -4,9 +4,14 @@ const app = express();
 const server = require('http').Server(app);
 //An http server must be passes to the socket because the webrtc socket is initiaited by a http request.
 const io = require('socket.io')(server);
+const { ExpressPeerServer } = require('peer');
+const peerServer = ExpressPeerServer(server, {
+  debug: true
+});
 //uuid is used to generate dynamc id's which we use as room id.
 const { v4: uuidv4 } = require('uuid');
 
+app.use('/peerjs', peerServer);
 
 app.set('view engine','ejs');
 app.use(bodyParser.urlencoded({extended:true})); 
