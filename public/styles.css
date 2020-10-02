@@ -48,6 +48,7 @@ p{
     flex: 0.35;
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 
@@ -155,4 +156,17 @@ form > button {
 
 .removeChat {
     display: none;
+}
+
+@media (max-width: 772px){
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        flex: auto;
+    }
+    .chat-section{
+        flex: auto;
+    }
 }

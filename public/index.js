@@ -9,7 +9,6 @@ const chatControlButton = document.querySelector(".chat-controls");
 var myPeer = new Peer(undefined, {
   path:'/peerjs',
     host: 'fierce-inlet-18150.herokuapp.com',
-    host:'/',
     port: 443,
     secure:true
 });
@@ -76,6 +75,8 @@ myPeer.on('open', (id) => {
 function startVideoStream(video, stream) {
 
     video.srcObject = stream;
+    // // video.classList.add('col-lg-6');
+    // video.classList.add('col-md-4');
     video.addEventListener("loadedmetadata", () => {
         video.play();
     })
