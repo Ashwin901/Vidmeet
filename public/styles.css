@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.video-display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video{
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+p{
+    color: white;
+}
+
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+.left{
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.nav{
+    color: #133b5c;
+}
+
+.video-section{
+    flex-grow: 0.8;
+    background-color:#00334e;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+}
+
+.chat-section{
+    
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+}
+
+.remove-chat{
+    /* transform: translateY(100%); */
+}
+
+.chat-heading{
+   padding-top: 12px;
+    text-align: center;
+    background-color:#00334e ;
+    border-left: 5px;
+    border-right: 5px;
+    border-style: solid;
+    border-color: #ee6f57;
+    color: white;
+}
+
+
+.main-chat-section{
+    flex-grow:1;
+    overflow-y: auto;
+    background-color:#00334e;
+    border: 2px 5px 0 5px;
+    border-color:#ee6f57;
+    border-style: solid;
+    color: white;
+}
+
+.chat-input{
+    /* display: flex; */
+    padding: 22px 12px;
+   display: flex;
+   background-color:#00334e;
+    border-bottom: 5px;
+    border-color: #ee6f57;
+    border-style: solid;
+}
+
+.message-input {
+    border: none;
+    flex-grow: 1;
+    background-color: transparent;
+    outline: none;
+    color: white
+}
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    background:linear-gradient(
+        45deg,
+    #ee6f57,
+    #00334e
+);
+height:100vh
+}
+
+.intro-heading{
+    color: white;
+}
+
+form > button {
+  margin: 1rem;
+}
+.join-room{
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.form-group > input{
+    margin-bottom: 1.5rem;
+}
+
+.controls{
+    display: flex;
+    /* padding-top: 1.7rem; */
+    background-color: #ee6f57;
+    justify-content: space-between;
+}
+
+.controls-section{
+    display: flex;
+}
+
+.controls_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 8px 10px; */
+    padding-top: 14px;
+    padding-left: 1rem;
+    padding-bottom: 19px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.function-button{
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
