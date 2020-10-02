@@ -162,7 +162,7 @@ const scrollToBottom = () => {
     document.querySelector('.video_button').innerHTML = html;
   }
   
-  chatButton.addEventListener('click',chatDisplay);
+  // chatButton.addEventListener('click',chatDisplay);
 
   function chatDisplay(){
           if(chatSection.classList.contains('removeChat')){
