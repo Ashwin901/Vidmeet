@@ -8,7 +8,7 @@ var chatSection = document.querySelector(".chat-section");
 var myPeer = new Peer(undefined, {
   path:'/',
     host: '/',
-    port: 3001
+    port: 443
 });
 
 var myVideo = document.createElement('video');
