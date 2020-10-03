@@ -170,3 +170,10 @@ form>button {
         text-align: center;
     }
 }
+
+@media (max-width : 842px){
+    video{
+        width: 300px;
+        height:200px
+    }
+}
