@@ -1,22 +1,22 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.video-display{
+.video-display {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-video{
+video {
     width: 400px;
     height: 300px;
     object-fit: cover;
     margin: 1rem;
 }
 
-p{
+p {
     color: white;
 }
 
@@ -25,26 +25,22 @@ p{
     height: 100vh;
 }
 
-.left{
+.left {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
 }
 
-.nav{
-    color: #133b5c;
-}
-
-.video-section{
+.video-section {
     flex-grow: 0.8;
-    background-color:#00334e;
+    background-color: #00334e;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
     display: flex;
 }
 
-.chat-section{
+.chat-section {
     flex: 0.35;
     display: flex;
     flex-direction: column;
@@ -52,10 +48,10 @@ p{
 }
 
 
-.chat-heading{
-   padding-top: 12px;
+.chat-heading {
+    padding-top: 12px;
     text-align: center;
-    background-color:#00334e ;
+    background-color: #00334e;
     border-left: 5px;
     border-right: 5px;
     border-style: solid;
@@ -64,21 +60,20 @@ p{
 }
 
 
-.main-chat-section{
-    flex-grow:1;
+.main-chat-section {
+    flex-grow: 1;
     overflow-y: auto;
-    background-color:#00334e;
+    background-color: #00334e;
     border: 2px 5px 0 5px;
-    border-color:#ee6f57;
+    border-color: #ee6f57;
     border-style: solid;
     color: white;
 }
 
-.chat-input{
-    /* display: flex; */
+.chat-input {
     padding: 22px 12px;
-   display: flex;
-   background-color:#00334e;
+    display: flex;
+    background-color: #00334e;
     border-bottom: 5px;
     border-color: #ee6f57;
     border-style: solid;
@@ -97,44 +92,43 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     text-align: center;
-    background:linear-gradient(
-        45deg,
-    #ee6f57,
-    #00334e
-);
-height:100vh
+    background: linear-gradient(45deg,
+            #ee6f57,
+            #00334e);
+    height: 100vh
 }
 
-.intro-heading{
+.intro-heading {
     color: white;
 }
 
-form > button {
-  margin: 1rem;
+form>button {
+    margin: 1rem;
 }
-.join-room{
+
+.join-room {
     color: white;
     margin-bottom: 1rem;
 }
 
-.form-group > input{
+.form-group>input {
     margin-bottom: 1.5rem;
 }
 
-.controls{
+.controls {
     display: flex;
     /* padding-top: 1.7rem; */
     background-color: #ee6f57;
     justify-content: space-between;
 }
 
-.controls-section{
+.controls-section {
     display: flex;
 }
 
-.controls_button{
+.controls_button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +140,7 @@ form > button {
     cursor: pointer;
 }
 
-.function-button{
+.function-button {
     background-color: transparent;
     border: none;
     margin: 0;
@@ -158,15 +152,21 @@ form > button {
     display: none;
 }
 
-@media (max-width: 772px){
+@media (max-width: 772px) {
     .main {
         display: flex;
         flex-direction: column;
     }
-    .left{
+
+    .left {
         flex: auto;
     }
-    .chat-section{
+
+    .chat-section {
         flex: auto;
+    }
+
+    .controls_button{
+        text-align: center;
     }
 }
