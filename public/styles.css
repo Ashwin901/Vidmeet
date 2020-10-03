@@ -16,8 +16,16 @@ video {
     margin: 1rem;
 }
 
+
 p {
     color: white;
+    font-family: 'Secular One', sans-serif;
+}
+
+
+
+.navbar{
+    font-family: 'Secular One', sans-serif;
 }
 
 .main {
@@ -38,6 +46,10 @@ p {
     align-items: center;
     flex-grow: 1;
     display: flex;
+}
+
+h4{
+    font-family: 'Secular One', sans-serif;
 }
 
 .chat-section {
@@ -68,6 +80,10 @@ p {
     border-color: #ee6f57;
     border-style: solid;
     color: white;
+}
+
+span{
+    font-family: 'Secular One', sans-serif;
 }
 
 .chat-input {
@@ -102,6 +118,7 @@ p {
 
 .intro-heading {
     color: white;
+    font-family: 'Secular One', sans-serif;
 }
 
 form>button {
@@ -111,6 +128,7 @@ form>button {
 .join-room {
     color: white;
     margin-bottom: 1rem;
+    font-family: 'Secular One', sans-serif;
 }
 
 .form-group>input {
