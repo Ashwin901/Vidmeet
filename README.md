@@ -22,11 +22,11 @@ If a user wants to join a particular room he should gain a id from the other use
 5) [peerjs](https://www.npmjs.com/package/peerjs)
 
 ## Sources :
- 1) [Socket.io] (https://socket.io/docs/)
+ 1) [Socket.io](https://socket.io/docs/)
  
- 2) [Peerjs] (https://peerjs.com/)
+ 2) [Peerjs](https://peerjs.com/)
  
- 3) [Webdevsimplified youtube] (https://www.youtube.com/watch?v=DvlyzDZDEq4)
+ 3) [Webdevsimplified youtube](https://www.youtube.com/watch?v=DvlyzDZDEq4)
  
  ## Modules :
  
@@ -39,7 +39,7 @@ If a user wants to join a particular room he should gain a id from the other use
  3) Thre's also a leave button using which a user can leave the room
  
  4) At the end there is a chat button, if we press this button a chat section will appear where the users present in the room can text each other.
-    The chat section can slide in and slide out ny pressing the chat button
+    The chat section can slide in and slide out by pressing the chat button
     
  ## Compatibility :
  This web app can be used in different screen sizes such as a desktop, smartphone, tablet etc.
