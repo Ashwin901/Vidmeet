@@ -28,7 +28,11 @@ If a user wants to join a particular room he should gain a id from the other use
  
  2) [Peerjs](https://peerjs.com/)
  
+     PeerJS wraps the browser's WebRTC implementation to provide a complete, configurable, and easy-to-use peer-to-peer connection API.
+ 
  3) [Webdevsimplified youtube](https://www.youtube.com/watch?v=DvlyzDZDEq4)
+ 
+    Gave a basic understanding of how to use sockets to etabslish connection and how to use peerjs library to make calls between users.
  
  ## Modules :
  
