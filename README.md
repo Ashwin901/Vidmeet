@@ -24,6 +24,8 @@ If a user wants to join a particular room he should gain a id from the other use
 ## Sources :
  1) [Socket.io](https://socket.io/docs/)
  
+    Socket.IO is a library that enables real-time, bidirectional and event-based communication between the browser and the server.
+ 
  2) [Peerjs](https://peerjs.com/)
  
  3) [Webdevsimplified youtube](https://www.youtube.com/watch?v=DvlyzDZDEq4)
